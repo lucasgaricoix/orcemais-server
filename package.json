@@ -1,0 +1,17 @@
+{
+  "name": "orcemais-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Garicoix",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^48.0.0",
+    "mongoose": "^5.9.4",
+    "nodemon": "^2.0.2",
+    "query-string": "^6.11.1"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js"
+  }
+}
