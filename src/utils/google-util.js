@@ -4,7 +4,7 @@ const googleConfig = {
   clientId:
     "147445577998-rkg9in54ehfdfodtbnvhod9pmppv9qrr.apps.googleusercontent.com",
   clientSecret: "1r2v0Bg_04ms5w76dspQF46a",
-  redirect: "http://localhost:3333/auth/google/callback",
+  redirect: "https://orcemais-server.herokuapp.com/auth/google/callback",
 };
 
 function createConnection() {
