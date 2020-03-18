@@ -23,4 +23,4 @@ app.get("/auth/google/callback", async (req, res) => {
   return res.redirect('orcemais://homepage');
 })
 
-app.listen(port || process.env.PORT);
+app.listen(process.env.PORT || port);
