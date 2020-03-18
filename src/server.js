@@ -11,19 +11,16 @@ app.get("/auth", async (req, res) => {
 
 app.get("/auth/google/callback", async (req, res) => {
   const code = req.query.code
-  
   const auth = createConnection();
   await auth.getToken(code, function (error, tokens) {
     if (error) {
       console.log(error);
     } else {
-      auth.setCredentials(tokens);      
+      auth.setCredentials(tokens);
     }
-
-    console.log(data);
   });
 
-  res.redirect('orcemais://homepage');
+  return res.redirect('orcemais://homepage');
 })
 
-app.listen(process.env.PORT || port);
+app.listen(port || process.env.PORT);
